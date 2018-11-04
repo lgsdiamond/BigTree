@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/expand_all"
+        android:title="모두 펼치기" />
+
+    <item
+        android:id="@+id/collapse_all"
+        android:title="모두 접기" />
+
+    <item
+        android:id="@+id/reset_base"
+        android:title="PV 및 보너스 기준 재설정" />
+
+    <item android:title="회원(네트워크) 추가">
+        <menu>
+            <item
+                android:id="@+id/add_ABO_20"
+                android:icon="@drawable/ic_abo"
+                android:title="사업자(ABO)-20만 PV" />
+            <item
+                android:id="@+id/add_ABO_1000"
+                android:icon="@drawable/ic_abo"
+                android:title="사업자(ABO)-1000만 PV" />
+            <item
+                android:id="@+id/add_node3"
+                android:icon="@drawable/ic_network_3"
+                android:title="사업자 3명 레그" />
+            <item
+                android:id="@+id/add_node6"
+                android:icon="@drawable/ic_network_6"
+                android:title="사업자 6명 레그" />
+            <item
+                android:id="@+id/add_node64"
+                android:icon="@drawable/ic_network_64"
+                android:title="사업자 6-4 모델" />
+            <item
+                android:id="@+id/add_node642"
+                android:icon="@drawable/ic_network_642"
+                android:title="사업자 6-4-2 모델" />
+            <item
+                android:id="@+id/add_onMember"
+                android:icon="@drawable/ic_onmember"
+                android:title="온라인 회원" />
+            <item
+                android:id="@+id/add_offMember"
+                android:icon="@drawable/ic_offmember"
+                android:title="단순 소비자" />
+        </menu>
+    </item>
+
+    <item android:title="개인 PV 변경">
+        <menu>
+            <item
+                android:id="@+id/add_PV_10_ABO"
+                android:icon="@drawable/ic_pv_plus_10"
+                android:title="10만 PV 증가(+)" />
+            <item
+                android:id="@+id/subtract_PV_10_ABO"
+                android:icon="@drawable/ic_pv_minus_10"
+                android:title="10만 PV 감소(-)" />
+            <item
+                android:id="@+id/add_PV_100_ABO"
+                android:icon="@drawable/ic_pv_plus_100"
+                android:title="100만 PV 증가(+)" />
+            <item
+                android:id="@+id/subtract_PV_100_ABO"
+                android:icon="@drawable/ic_pv_minus_100"
+                android:title="100만 PV 감소(-)" />
+            <item
+                android:id="@+id/enter_PV_ABO"
+                android:icon="@drawable/ic_enter_pv"
+                android:title="PV값 직접 입력..." />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/remove_ABO"
+        android:icon="@drawable/ic_abo"
+        android:title="ABO(다운라인) 삭제" />
+
+    <item
+        android:id="@+id/set_focused_abo"
+        android:title="포커스 ABO로 지정" />
+    <item
+        android:id="@+id/chane_name_ABO"
+        android:title="ABO 이름 변경..." />
+</menu>

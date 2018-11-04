@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/activatedBackgroundIndicator">
+
+    <com.lgsdiamond.lgsutility.LgsTextTitle
+        android:id="@+id/tv_abo_overview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_dark"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/iv_arrow"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Overview" />
+
+    <ImageView
+        android:id="@+id/iv_arrow"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="dropping arrow"
+        android:src="@drawable/ic_amway_arrow_right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_abo_overview" />
+
+    <com.lgsdiamond.lgsutility.LgsTextContent
+        android:id="@+id/tv_pin_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#ffffa0"
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/iv_abo_pin"
+        app:layout_constraintStart_toStartOf="@id/iv_abo_pin"
+        app:layout_constraintTop_toBottomOf="@id/iv_abo_pin"
+        tools:text="%%" />
+
+    <ImageView
+        android:id="@+id/iv_abo_pin"
+        android:layout_width="40dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="abo pin notation"
+        android:src="@drawable/ic_abo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_arrow"
+        app:layout_constraintTop_toBottomOf="@id/tv_abo_overview"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <com.lgsdiamond.lgsutility.LgsTextTitle
+        android:id="@+id/tv_title_abo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_bonus_change_abo"
+        app:layout_constraintStart_toEndOf="@id/iv_abo_pin"
+        app:layout_constraintTop_toBottomOf="@id/tv_abo_overview"
+        tools:text="title" />
+
+    <com.lgsdiamond.lgsutility.LgsTextContent
+        android:id="@+id/tv_bonus_change_abo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="4dp"
+        android:background="#a0ffa0"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_abo_overview"
+        tools:text="bonus change" />
+
+    <com.lgsdiamond.lgsutility.LgsTextContent
+        android:id="@+id/tv_desc_abo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_pv_change_abo"
+        app:layout_constraintStart_toEndOf="@+id/iv_abo_pin"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_abo"
+        tools:text="description" />
+
+    <com.lgsdiamond.lgsutility.LgsTextContent
+        android:id="@+id/tv_pv_change_abo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="#ffffa0"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_bonus_change_abo"
+        tools:text="pv change" />
+
+</android.support.constraint.ConstraintLayout>

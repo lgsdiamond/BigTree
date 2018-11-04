@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lo_focused_abo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFFD0"
+    app:layout_constraintBottom_toBottomOf="parent"
+    tools:showIn="@layout/fragment_network">
+
+    <com.lgsdiamond.lgsutility.LgsTextTitle
+        android:id="@+id/tv_focused_abo_overview"
+        style="@style/DataTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="ABO Overview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.lgsdiamond.lgsutility.LgsTextTitle
+        android:id="@+id/label_pv"
+        style="@style/DataSubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_focused_abo_overview" />
+
+    <com.lgsdiamond.lgsutility.LgsTextTitle
+        android:id="@+id/value_pv"
+        style="@style/DataValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="PV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/label_pv"
+        app:layout_constraintTop_toBottomOf="@id/tv_focused_abo_overview" />
+
+    <com.lgsdiamond.lgsutility.LgsTextTitle
+        android:id="@+id/label_bonus"
+        style="@style/DataSubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="보너스"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/label_pv" />
+
+    <com.lgsdiamond.lgsutility.LgsTextTitle
+        android:id="@+id/value_bonus"
+        style="@style/DataValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="보너스"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/label_bonus"
+        app:layout_constraintTop_toBottomOf="@id/label_pv" />
+
+</android.support.constraint.ConstraintLayout>

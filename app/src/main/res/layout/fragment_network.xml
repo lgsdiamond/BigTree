@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <include layout="@layout/enter_text" />
+
+    <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rvMemberList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/lo_wide_tree_view"
+        app:layout_constraintTop_toBottomOf="@id/lo_enter_text" />
+
+    <include layout="@layout/wide_tree_view" />
+
+    <include layout="@layout/monthly_develop" />
+
+    <include layout="@layout/focused_abo" />
+
+</android.support.constraint.ConstraintLayout>

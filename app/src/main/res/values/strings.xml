@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">BigTree</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <!--action menus-->
+    <string name="action_login">등록</string>
+    <string name="action_settings">앱 설정</string>
+    <string name="action_sound">사운드</string>
+    <string name="action_sound_on">사운드 켜기(ON)</string>
+    <string name="action_sound_off">사운드 끄기(OFF)</string>
+    <string name="action_finish">앱 나가기</string>
+
+    <string name="title_login">"BigTree" 앱 사용자 등록</string>
+
+    <!--navigation layout-->
+    <string name="author_email">lgsdiamond@gmail.com</string>
+    <string name="update_date">2018.8.1, 1차 Up</string>
+
+    <!--LGS: addition for typefaces-->
+    <string name="title_face_font_path">font/nanum_square_round_bold.otf</string>
+    <string name="content_face_font_path">font/nanum_square_round_regular.otf</string>
+</resources>

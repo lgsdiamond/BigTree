@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.lgsdiamond.bigtree.MainActivity">
+    
+    <FrameLayout
+        android:id="@+id/layoutContentMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.github.chrisbanes.photoview.PhotoView
+            android:id="@+id/mainPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/bigtree_v" />
+
+        <View
+            android:id="@+id/photoTop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#40FFFFFF" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.lgsdiamond.lgsutility.LgsTextContent
+                android:id="@+id/txtUserInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:background="#40ffffff"
+                android:fontFamily="serif"
+                android:text="사용자 정보를 등록하세요."
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.lgsdiamond.lgsutility.LgsEditText
+                    android:id="@+id/edtUserName"
+                    style="@style/edit_box"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:hint="회원 이름"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="24dp"
+                    app:layout_constraintEnd_toEndOf="@id/txtUserInfo"
+                    app:layout_constraintTop_toBottomOf="@id/txtUserInfo" />
+
+            <com.lgsdiamond.lgsutility.LgsTextContent
+                android:id="@+id/labUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:background="#40ffffff"
+                android:fontFamily="serif"
+                android:text="이름:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="@id/edtUserName"
+                app:layout_constraintEnd_toStartOf="@id/edtUserName"
+                app:layout_constraintTop_toTopOf="@id/edtUserName" />
+
+            <com.lgsdiamond.lgsutility.LgsButton
+                android:id="@+id/btnRegister"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/button_selector_transparent"
+                android:drawableStart="@drawable/ic_login"
+                android:text="등록"
+                android:textSize="24dp"
+                app:layout_constraintEnd_toEndOf="@id/edtUserName"
+                app:layout_constraintStart_toStartOf="@id/edtUserName"
+                app:layout_constraintTop_toBottomOf="@id/edtUserName" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>

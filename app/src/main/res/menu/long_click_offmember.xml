@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/remove_offMember"
+        android:icon="@drawable/ic_offmember"
+        android:title="소비자 삭제" />
+    <item android:title="PV 변경">
+        <menu>
+            <item
+                android:id="@+id/add_PV_10_offMember"
+                android:icon="@drawable/ic_pv_plus_10"
+                android:title="10만 PV 증가(+)" />
+            <item
+                android:id="@+id/subtract_PV_10_offMember"
+                android:icon="@drawable/ic_pv_minus_10"
+                android:title="10만 PV 감소(-)" />
+            <item
+                android:id="@+id/add_PV_100_offMember"
+                android:icon="@drawable/ic_pv_plus_100"
+                android:title="100만 PV 증가(+)" />
+            <item
+                android:id="@+id/subtract_PV_100_offMember"
+                android:icon="@drawable/ic_pv_minus_100"
+                android:title="100만 PV 감소(-)" />
+            <item
+                android:id="@+id/enter_PV_offMember"
+                android:icon="@drawable/ic_enter_pv"
+                android:title="PV값 직접 입력..." />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/chane_name_offMember"
+        android:title="소비자 이름 변경..." />
+</menu>

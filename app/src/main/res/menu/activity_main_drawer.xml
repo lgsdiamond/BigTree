@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_network"
+            android:icon="@drawable/ic_menu_network"
+            android:title="네트워크 연습" />
+        <item
+            android:id="@+id/nav_simulation"
+            android:icon="@drawable/ic_menu_simulation"
+            android:title="네트워크 시뮬레이션" />
+        <item
+            android:id="@+id/nav_planning"
+            android:icon="@drawable/ic_menu_planning"
+            android:title="나의 네트워크 계획" />
+        <item
+            android:id="@+id/nav_people"
+            android:icon="@drawable/ic_menu_people"
+            android:title="귀한 사람들" />
+    </group>
+    <item android:title="이동하기">
+        <menu>
+            <item
+                android:id="@+id/nav_manual"
+                android:icon="@drawable/ic_menu_manual"
+                android:title="매뉴얼 보기" />
+            <item
+                android:id="@+id/nav_sABN"
+                android:icon="@drawable/ic_s_abn"
+                android:title="sABN 앱 열기" />
+            <item
+                android:id="@+id/nav_amway_home"
+                android:icon="@drawable/ic_amway_home"
+                android:title="한국암웨이 홈페이지" />
+            <item
+                android:id="@+id/nav_terminate"
+                android:icon="@drawable/ic_finish"
+                android:title="BigTree 앱 종료" />
+        </menu>
+    </item>
+</menu>

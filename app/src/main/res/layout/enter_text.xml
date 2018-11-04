@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lo_enter_text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:showIn="@layout/fragment_network">
+
+    <com.lgsdiamond.lgsutility.LgsButton
+        android:id="@+id/btnCancelText"
+        style="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="취소"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.lgsdiamond.lgsutility.LgsEditText
+        android:id="@+id/edtText"
+        style="@style/edit_box"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:text="20.0"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/btnAcceptText"
+        app:layout_constraintEnd_toStartOf="@id/btnAcceptText"
+        app:layout_constraintStart_toEndOf="@id/btnCancelText"
+        app:layout_constraintTop_toTopOf="@id/btnAcceptText" />
+
+    <com.lgsdiamond.lgsutility.LgsButton
+        android:id="@+id/btnAcceptText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="확인"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

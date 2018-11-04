@@ -1,0 +1,66 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.lgsdiamond.bigtree.ManualFragment">
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfManual"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/lo_manuals"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/lo_manuals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.lgsdiamond.lgsutility.LgsButton
+            android:id="@+id/btn_SP_manual"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="SP"
+            android:textSize="14dp" />
+
+        <com.lgsdiamond.lgsutility.LgsButton
+            android:id="@+id/btn_GP_manual"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="GP"
+            android:textSize="14dp" />
+
+        <com.lgsdiamond.lgsutility.LgsButton
+            android:id="@+id/btn_PT_manual"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="PT"
+            android:textSize="14dp" />
+
+        <com.lgsdiamond.lgsutility.LgsButton
+            android:id="@+id/btn_FAA_manual"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="FAA"
+            android:textSize="14dp" />
+
+        <com.lgsdiamond.lgsutility.LgsButton
+            android:id="@+id/btn_business_guide"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="가이드"
+            android:textSize="14dp" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/setting_network"
+        android:title="네트워크 설정" />
+    <item
+        android:id="@+id/save_data_network"
+        android:title="현 네트워크 저장" />
+    <item
+        android:id="@+id/back_default_network"
+        android:title="기본 네트워크로 되돌리기" />
+    <item android:title="Action">
+        <menu>
+            <item
+                android:id="@+id/expand_all_view"
+                android:icon="@drawable/ic_row_expand"
+                android:title="모두 펼치기" />
+
+            <item
+                android:id="@+id/collapse_all_view"
+                android:icon="@drawable/ic_row_collapse"
+                android:title="모두 접기" />
+
+            <item
+                android:id="@+id/no_member_view"
+                android:icon="@drawable/ic_remove_network"
+                android:title="모든 멤버 삭제" />
+
+            <item
+                android:id="@+id/add_ABO_20_view"
+                android:icon="@drawable/ic_abo"
+                android:title="Top ABO(20만 PV) 추가" />
+
+            <item
+                android:id="@+id/add_ABO_1000_view"
+                android:icon="@drawable/ic_abo"
+                android:title="Top ABO(1000만 PV) 추가" />
+
+            <item
+                android:id="@+id/no_focus_view"
+                android:icon="@drawable/ic_no_focus"
+                android:title="포커스 없애기" />
+
+            <item
+                android:id="@+id/toggle_change_track"
+                android:checkable="true"
+                android:icon="@drawable/ic_show_change"
+                android:title="변화 계산하기" />
+        </menu>
+    </item>
+</menu>
